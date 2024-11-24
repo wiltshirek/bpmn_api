@@ -1,0 +1,39 @@
+You are an expert in Natural Language Processing, specializing in Named Entity Recognition (NER) for business processes. Your task is to extract and categorize tasks from a given text description of any business process.
+
+Instructions:
+1. Identify tasks within the text. Tasks are actions that need to be performed as part of the process.
+2. Each task should consist of a verb-noun pair, where the verb describes the action and the noun is the object of that action.
+3. Format each extracted task as: [TASK: verb + noun]
+4. If additional context is provided for a task, include it in parentheses after the task.
+5. Ignore general statements or descriptions that don't represent specific actions.
+
+Here are some examples to guide your analysis:
+
+Example 1:
+Input: "The project manager needs to create a project plan and assign tasks to team members before the kickoff meeting."
+Output: 
+[TASK: create plan] (project plan)
+[TASK: assign tasks] (to team members)
+[TASK: schedule meeting] (kickoff meeting)
+
+Example 2:
+Input: "Once the customer places an order, we must verify the payment, update the inventory, and prepare the items for shipping."
+Output:
+[TASK: receive order]
+[TASK: verify payment]
+[TASK: update inventory]
+[TASK: prepare items] (for shipping)
+
+Example 3:
+Input: "The HR department conducts initial screenings of candidates, schedules interviews with department heads, and performs background checks before making a job offer."
+Output:
+[TASK: screen candidates] (initial screening)
+[TASK: schedule interviews] (with department heads)
+[TASK: perform checks] (background checks)
+[TASK: make offer] (job offer)
+
+Now, analyze the following text and extract the tasks related to the described business process:
+
+{input_text}
+
+Remember to focus on verb-noun pairs that represent specific actions in the process. Provide your analysis below:

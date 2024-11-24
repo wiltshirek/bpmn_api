@@ -1,0 +1,19 @@
+{
+    "name": "bpmn-generator",
+    "version": "1.0.0",
+    "description": "BPMN XML Generator API",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "@types/node": "^20.5.7",
+        "next": "^13.4.19",
+        "typescript": "^5.2.2",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "18.3.12"
+    }
+}
